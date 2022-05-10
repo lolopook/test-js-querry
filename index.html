@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery-3.6.0.js"></script>
+
+    <title>devoir</title>
+</head>
+<body>
+    <input type="email" name="email" id="email" placeholder="Entrer votre mail" value="">
+    <input type="password" name="password" id="pwd" placeholder="mots de passe" value="">
+
+    <!-- <input type="button" value="Connexion" id="submit"> -->
+    <button type="submit" id="submit" value="btn submit">Connexion</button>
+    
+    <script>
+        
+        
+        // Je les affiche dans une alert
+        
+        let submit = $("#submit");
+        // Si l'alert s'affiche, je peux passer à la suite
+        alert("Remplir le formulaire");
+        
+        // Lorsque je clique sur le bouton
+        submit.click(function(){
+            
+            if (($("#email").val() == "admin") && ($("#pwd").val() == "admin10")) {
+                // Je récupère la valeur de l'input text et du
+                // password
+                recup = "le pseudo est : " + $("#email").val() + " le mots de passe est : "+ $("#pwd").val(); // $("#id").val()
+                // J'affiche une alert
+                    alert(recup);
+            } else {
+                alert("Error le monde explose dans 3seconde");
+            }
+        })
+        
+
+        
+
+    </script>
+</body>
+</html>
